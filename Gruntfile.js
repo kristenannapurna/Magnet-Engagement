@@ -34,6 +34,9 @@ module.exports = function(grunt) {
    			base: ''
    		}
    	}
+   },
+   img: {
+      src: 'public/img'
    }
 
  });
@@ -42,6 +45,7 @@ module.exports = function(grunt) {
  grunt.loadNpmTasks('grunt-contrib-watch');
  grunt.loadNpmTasks('grunt-autoprefixer');
  grunt.loadNpmTasks('grunt-contrib-connect');
+ grunt.loadNpmTasks('grunt-img');
 
  // Default task(s).
  grunt.registerTask('default', ['connect','watch']);
