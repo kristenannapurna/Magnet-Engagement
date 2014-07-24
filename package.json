@@ -1,21 +1,21 @@
 {
-  "name": "starterWorkspace",
+  "name": "week2project",
   "version": "0.0.0",
-  "description": "Starter template for new projects",
+  "description": "magnet engagement",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kristencodes/startertemplate.git"
+    "url": "https://github.com/kristencodes/Magnet-Engagement.git"
   },
   "author": "Kristen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kristencodes/startertemplate/issues"
+    "url": "https://github.com/kristencodes/week2project/issues"
   },
-  "homepage": "https://github.com/kristencodes/startertemplate",
+  "homepage": "https://github.com/kristencodes/week2project",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^0.8.2",
