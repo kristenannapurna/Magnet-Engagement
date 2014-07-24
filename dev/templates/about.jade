@@ -1,0 +1,100 @@
+!!! 5
+html(lang='en')
+head
+    meta(charset='UTF-8')
+    title Magnet Engagement Group
+    link(rel='stylesheet', href='style.css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat:700', rel='stylesheet', type='text/css')
+    //
+       heavily inspired by http://www.undercurrent.com/ (but I didn't steal any code!!) 
+  body
+    .wrapper
+      .aboutHero
+        section.aboutOverlay
+          nav.clearfix
+            .logoWrapper.clearfix
+              h1
+                a(href='index.html')
+                  img#home(src='images/magnetlogo.png', alt='Magnet Engagement Group')
+            .itemWrapper.clearfix
+              ul.nav
+                li
+                  a(href='index.html') Home
+                li
+                  a(href='about.html') About
+                li
+                  a(href='services.html') Services
+                  ul.submenu
+                    li
+                      a(href='#') Marketing
+                    li
+                      a(href='#') Branding
+                    li
+                      a(href='#') Digital
+                  li
+                    a.button.smoothScroll(href='#contact') Contact
+        //
+           aboutOverlay 
+      //
+         aboutHero 
+      section.content
+        .container.clearfix
+          .columns
+            .leftColumn
+              h3 What We Do
+              .video-container
+                iframe(width='640', height='360', src='http://www.youtube.com/embed/KLi5JdYTs7o?rel=0', frameborder='0', allowfullscreen='allowfullscreen')
+              p
+                | We help brands create magnetism with consumers, business audiences and employees through a wide range of effective live and digital experiences that stimulate the target and  motivate response.
+              p
+                | Utilizing targeted insights, strategic creativity, and armed with an exceptional team, we carefully tailor our programs to provide entertainment and value that is relevant and compelling, and we do it right across Canada.
+              h3 The Agency
+              p
+                | At Magnet Engagement Group, we ensure brands gain ground and succeed in the market through strategic, integrated live + digital experiences. We offer clients the creative solutions, expertise, and resources to influence consumer buying behavior and deliver results.
+              h3 Our Process
+              p
+                | Through meaningful and personal interactions, we create a foundation that leads to advocacy for our clients’ brands. For every campaign, we build consumer loyalty for brands through an immersive experience. Then, we amplify it and deliver results.
+              p
+                | From integrated, multi-year campaigns to grassroots, one-off activations, Magnet responds to our clients’ changing needs to succeed in a fast-paced marketplace, and the programs that we create with our clients captivate and  sustain consumer interest by leveraging passion points.
+              p
+                | We listen to what your consumers, your retail partners, and your employees are saying.  From that, we create and deliver an engaging, relevant story.  We truly connect.
+            .rightColumn
+              h4 Our Story
+              img(src='http://placehold.it/200/', alt='')
+              p
+                | Wayfarers biodiesel Portland, umami viral master cleanse semiotics. Austin umami occupy gluten-free, mlkshk master cleanse gentrify blog viral pug try-hard street art forage four loko. Blue Bottle YOLO cardigan cray try-hard.
+              p
+                | Organic tofu synth, post-ironic cred Echo Park gluten-free leggings Banksy Portland wayfarers brunch Pinterest Bushwick cray. Roof party stumptown four loko, Blue Bottle readymade try-hard normcore mixtape salvia keytar Etsy gluten-free vinyl chia.
+              p
+                | Banksy polaroid food truck, banjo trust fund Williamsburg quinoa retro synth Truffaut American Apparel +1 skateboard PBR&B Echo Park. Meh Marfa semiotics, McSweeney's banh mi jean shorts hashtag distillery Carles Etsy vinyl try-hard next level fanny pack Thundercats.
+      section#contact.form
+        .container.clearfix
+          form.newsletter(action='https://docs.google.com/forms/d/1ExqkQS-ZT1Ua-YzNArm-Pv75t1qDkURB2-JhdHo1ztk/formResponse')
+            h2 Get in touch.
+            input.name(type='text', name='entry.9528429', placeholder='Your Name')
+            input.company(type='text', name='entry.1881194172', placeholder='Company')
+            textarea(name='entry.1679782051', cols='30', rows='10', placeholder='Hey, Magnet! I was wondering about...')
+            input.email(type='email', name='entry.1330204789', placeholder='Email Address')
+            input.submit(type='submit', value='Sign Me Up')
+      footer
+        .container.clearfix
+          .leftFooter
+            ul.links
+              li
+                a(href='/about') About
+              li
+                a(href='/services') Services
+              li
+                a(href='/contact') Contact
+          .rightFooter
+            h3 Love Letters
+            p.address
+              | 550 Queen St. W Unit 145
+              br
+              | Toronto, ON
+              br
+              | M5A 1V2
+          .bottomFooter
+            aside  © Copyright Magnet Engagement Group, 2014.
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+    script(type='text/javascript', src='javascript/smoothscroll.js')

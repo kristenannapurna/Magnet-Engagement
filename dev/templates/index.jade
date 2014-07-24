@@ -1,0 +1,114 @@
+!!! 5
+html(lang='en')
+head
+    meta(charset='UTF-8')
+    title Magnet Engagement Group
+    link(rel='stylesheet', href='style.css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat:700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='flexslider.css', type='text/css')
+    //
+       heavily inspired by http://www.undercurrent.com/ (but I didn't steal any code!!) 
+  body
+    .wrapper.clearfix
+      .hero
+        section.overlay
+          nav.clearfix
+            .logoWrapper.clearfix
+              h1
+                a(href='#')
+                  img#home(src='images/magnetlogo.png', alt='Magnet Engagement Group')
+            .itemWrapper.clearfix
+              ul.nav
+                li
+                  a(href='index.html') Home
+                li
+                  a(href='about.html') About
+                li
+                  a(href='services.html') Services
+                  ul.submenu
+                    li
+                      a(href='#') Marketing
+                    li
+                      a(href='#') Branding
+                    li
+                      a(href='#') Digital
+                  li
+                    a.button.smoothScroll(href='#contact') Contact
+          .description
+            //
+            h2 Attract. Engage. Reward.
+            p
+              | We’re experts in
+              span.emphasis attracting attention
+              | in a world where attention is in short supply.
+            a.attention.smoothScroll(href='#casestudy') See Our Work
+        //
+           hero 
+        section#casestudy.casestudy
+          .flexslider
+            ul.slides
+              li
+                img(src='images/slide1.jpg')
+                h2 Achieved same day sales growth and increased social shares.
+              li
+                img(src='images/slide2.jpg')
+                h2 Increased subcription rates by 30%.
+              li
+                img(src='images/slide3.jpg')
+                h2 Generated more than 10,000 new fans.
+          a.smoothScroll(href='#testimonials')
+            img.readMore(src='images/icon_6975.png', alt='read more')
+        section#testimonials.testimonials
+          .container.clearfix
+            //
+               want to eventually us javascript to make this quote rotate 
+            h3 What clients have to say
+            .quote
+              img(src='images/quotes.png', alt='quote')
+              blockquote
+                | As a strategy leader for hundreds of brands across the globe, I need partners that can understand and navigate massive complexity, and deliver simple, executable solutions. Matt and his team at Magnet do just that, and do it fast.
+              figcaption - Important Business Person, CEO Rogers Communications
+        //
+           FORM: I realized/remembered the form needed to be functioning AFTER I went ahead and made my own form and styled it and all that...so Ikind of did it backwards and just linked it to a google form after the fact. 
+        section#contact.form
+          .container.clearfix
+            form(action='https://docs.google.com/forms/d/1ExqkQS-ZT1Ua-YzNArm-Pv75t1qDkURB2-JhdHo1ztk/formResponse')
+              h2 Get in touch.
+              input.name(type='text', name='entry.9528429', placeholder='Your Name')
+              input.company(type='text', name='entry.1881194172', placeholder='Company')
+              textarea(name='entry.1679782051', cols='30', rows='10', placeholder='Hey, Magnet! I was wondering about...')
+              input.email(type='email', name='entry.1330204789', placeholder='Email Address')
+              input.submit(type='submit', value='Send')
+        footer
+          .container.clearfix
+            .leftFooter
+              ul.links
+                li
+                  a(href='about.html') About
+                li
+                  a(href='services.html') Services
+                li
+                  a(href='contact.html') Contact
+            .rightFooter
+              h3 Love Letters
+              p.address
+                | 550 Queen St. W Unit 145
+                br
+                | Toronto, ON
+                br
+                | M5A 1V2
+            .bottomFooter
+              aside  © Copyright Magnet Engagement Group, 2014.
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+    script(type='text/javascript', src='javascript/smoothscroll.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js')
+    script(src='jquery.flexslider.js')
+    script(type='text/javascript', charset='utf-8')
+      $(window).load(function() {
+      $('.flexslider').flexslider({
+      animation: 'slide',
+      slideshowSpeed: 4000,
+      });
+      });
+    //
+       Wanted to ask... if I want to put all of my plugins in different folders (like /js, /css what area do i edit to redirect the source? ) 
