@@ -6,7 +6,7 @@ module.exports = function(grunt) {
    sass: {
    	dist: {
    		files: {
-   		'Dist/style.css' : 'dev/sass/style.scss'
+   		'dist/style.css' : 'dev/sass/style.scss'
    		}
    	} 	
    }, 
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
    		browsers: ['last 5 version', 'ie 7', 'ie 8', 'ie 9']
    	}, 
    	no_dest: {
-   		src: 'Dist/style.css'
+   		src: 'dist/style.css'
    	}
    },
    connect: {
